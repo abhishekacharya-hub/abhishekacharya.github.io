@@ -1,19 +1,19 @@
 const quizData = [
     {
-        question: "What is the most used programming language in 2019?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
-        correct: "d",
+        question: "How do you call a function named 'myFunction'?",
+        a: "call myFunction()",
+        b: "call function myFunction()",
+        c: "myFunction()",
+        d: "function call myFunction()",
+        correct: "c",
     },
     {
-        question: "Who is the President of US?",
-        a: "Florin Pop",
-        b: "Donald Trump",
-        c: "Ivan Saldano",
-        d: "Mihai Andrei",
-        correct: "b",
+        question: "What is the correct JavaScript syntax to change the content of the HTML element below?",
+        a: "document.getElementById('demo').innerHTML = 'Hello World!'; ",
+        b: "#demo.innerHTML = 'Hello World!';",
+        c: "document.getElementByName('p').innerHTML = 'Hello World!';",
+        d: "document.getElement('p').innerHTML = 'Hello World!'';",
+        correct: "a",
     },
     {
         question: "What does HTML stand for?",
@@ -24,12 +24,60 @@ const quizData = [
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
+        question: "How do you round the number 7.25, to the nearest integer?",
+        a: "Math.round(7.25)  ",
+        b: "Math.rnd(7.25)",
+        c: "round(7.25)",
+        d: "rnd(7.25)",
+        correct: "a",
+    },
+    {
+        question: "How does a FOR loop start?",
+        a: "for (i = 0; i <= 5; i++) ",
+        b: "for (i <= 5; i++)",
+        c: "for (i = 0; i <= 5)",
+        d: "for i = 1 to 5",
+        correct: "a",
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        a: "onclick   ",
+        b: "onmouseover",
+        c: "onmouseclick",
+        d: "onchange",
+        correct: "a",
+    },
+    {
+        question: "How does a WHILE loop start?",
+        a: "while (i <= 10)",
+        b: "while i = 1 to 10",
+        c: "while (i <= 10; i++)",
+        d: "while(i <-10)",
+        correct: "a",
+    },
+    {
+        question: "How to write an IF statement in JavaScript?",
+        a: "if i = 5 then",
+        b: "if i == 5 then",
+        c: "if i = 5",
+        d: "if (i == 5)",
+        correct: "d",
+    },
+    {
+        question: "What is the correct way to write a JavaScript array?",
+        a: "var colors = (1:'red', 2:'green', 3:'blue')",
+        b: "var colors = ['red', 'green', 'blue']  ",
+        c: "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+        d: "var colors = red', 'green', 'blue'",
         correct: "b",
+    },
+    {
+        question: "How do you find the number with the highest value of x and y??",
+        a: "top(x, y)",
+        b: "ceil(x, y)",
+        c: "Math.max(x, y) ",
+        d: "Math.ceil(x, y)",
+        correct: "c",
     },
 ];
 
@@ -40,6 +88,8 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
+const f_text = document.getElementById("f_text");
 const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
